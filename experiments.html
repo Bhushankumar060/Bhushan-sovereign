@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiments — Bhushan Sovereign</title>
+  <meta name="description" content="Empirical field experiments testing communication, psychological resilience, physical capacity, and daily follow-through.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/src/styles/variables.css">
+  <link rel="stylesheet" href="/src/styles/global.css">
+  <link rel="stylesheet" href="/src/styles/components.css">
+  <link rel="stylesheet" href="/src/styles/animations.css">
+  <style>
+    .exp-metric-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-md);
+      margin: var(--space-xl) 0;
+    }
+    .exp-metric-card {
+      background: var(--surface-white);
+      border: var(--border-style);
+      padding: var(--space-lg);
+    }
+    .exp-metric-val {
+      font-size: 2rem;
+      font-weight: var(--font-weight-bold);
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+    }
+    .exp-log-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: var(--space-xl);
+      border-top: var(--border-style);
+    }
+    .exp-log-row {
+      display: grid;
+      grid-template-columns: 100px 1.2fr 2fr;
+      padding: var(--space-md) 0;
+      border-bottom: var(--border-style);
+      gap: var(--space-md);
+      font-size: var(--text-ui);
+    }
+    @media (max-width: 640px) {
+      .exp-log-row {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+      }
+    }
+    .exp-pipeline-card {
+      background: var(--surface-white);
+      border: var(--border-style);
+      padding: var(--space-xl);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="/" class="brand-logo" aria-label="Bhushan Sovereign Homepage">
+        BHUSHAN SOVEREIGN
+      </a>
+      <nav class="nav-desktop" role="navigation" aria-label="Main Navigation">
+        <div class="nav-links">
+          <a href="/journal.html" class="nav-link">Journal</a>
+          <a href="/experiments.html" class="nav-link active">Experiments</a>
+          <a href="/protocols.html" class="nav-link">Protocols</a>
+          <a href="/about.html" class="nav-link">About</a>
+        </div>
+        <a href="/#follow" class="nav-action">
+          Follow <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </nav>
+      <div class="mobile-controls">
+        <a href="/#follow" class="mobile-follow">Follow</a>
+        <button type="button" class="btn-menu" id="openMobileMenu" aria-label="Open menu">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="brand-logo">BHUSHAN SOVEREIGN</span>
+      <button type="button" class="reader-close-btn" id="closeMobileMenu" aria-label="Close menu">Close [esc]</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="/journal.html" class="drawer-link"><span>Journal</span><span class="index">01</span></a>
+      <a href="/experiments.html" class="drawer-link"><span>Experiments</span><span class="index">02</span></a>
+      <a href="/protocols.html" class="drawer-link"><span>Protocols</span><span class="index">03</span></a>
+      <a href="/about.html" class="drawer-link"><span>About</span><span class="index">04</span></a>
+    </nav>
+    <div class="drawer-footer">
+      <div class="drawer-socials">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content" class="site-main">
+    <section class="section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal-init" style="max-width: 720px;">
+          <span class="eyebrow">FIELD INQUIRIES</span>
+          <h1 class="hero-headline" style="font-size: clamp(2.5rem, 5vw, 4.25rem); margin-bottom: var(--space-md);">
+            EXPERIMENTS
+          </h1>
+          <p class="lead muted">
+            I don’t rely on untested theoretical advice. I design structured behavioral experiments, execute them under strict parameters, and document the measurable outcome.
+          </p>
+        </div>
+
+        <!-- Featured Active Experiment -->
+        <article class="experiment-banner reveal-init" style="margin-bottom: var(--space-4xl);">
+          <div>
+            <div class="exp-eyebrow-group">
+              <span class="eyebrow">ACTIVE INQUIRY // 01</span>
+              <div class="exp-category">COMMUNICATION × DISCIPLINE</div>
+            </div>
+            <div class="exp-large-title">21 DAYS</div>
+            <p class="muted" style="font-size: var(--text-ui); margin-top: var(--space-sm); font-family: monospace;">
+              STATUS: DAY 18 OF 21 · CYCLE 01
+            </p>
+          </div>
+
+          <div class="exp-details">
+            <h2 class="exp-headline" style="font-size: 1.5rem;">
+              Deliberate Daily Practice &amp; Unfiltered Follow-Through
+            </h2>
+            <p class="exp-copy">
+              I’m testing whether deliberate daily practice can improve the way I communicate and follow through.
+            </p>
+
+            <div class="exp-hypothesis-box">
+              <span class="exp-hypothesis-label">Hypothesis</span>
+              By forcing a daily output in public with strict non-negotiable timing, vocal hesitation diminishes by &gt;30% and cognitive resistance vanishes within 3 weeks.
+            </div>
+
+            <!-- Parameters -->
+            <div style="margin-bottom: var(--space-lg);">
+              <span class="eyebrow" style="margin-bottom: 0.4rem;">Rules of Engagement</span>
+              <ul style="list-style: disc; padding-left: 1.25rem; font-size: var(--text-ui); color: var(--text-primary); line-height: 1.6;">
+                <li>Record one continuous audio/video delivery without editing or retakes.</li>
+                <li>Submit to public ledger daily before 21:00 without fail.</li>
+                <li>Log immediate subjective resistance score (1–10) and objective hesitation tally.</li>
+              </ul>
+            </div>
+
+            <!-- Quantitative Metrics -->
+            <div class="exp-metric-grid">
+              <div class="exp-metric-card">
+                <div class="exp-metric-val">100%</div>
+                <div class="meta-item">COMPLETION RATE</div>
+              </div>
+              <div class="exp-metric-card">
+                <div class="exp-metric-val">-34%</div>
+                <div class="meta-item">VOCAL HESITATION</div>
+              </div>
+              <div class="exp-metric-card">
+                <div class="exp-metric-val">&lt; 90s</div>
+                <div class="meta-item">SETUP LATENCY</div>
+              </div>
+            </div>
+
+            <!-- Field Log -->
+            <div style="margin-top: var(--space-xl);">
+              <span class="eyebrow">CHRONOLOGICAL FIELD LOG</span>
+              <div class="exp-log-table">
+                <div class="exp-log-row">
+                  <div style="font-weight: 600; font-family: monospace;">Day 01</div>
+                  <div style="font-weight: 500;">Baseline Audit</div>
+                  <div class="muted">High friction starting. Recorded 14 filler words in 180 seconds. Felt acute camera gaze discomfort.</div>
+                </div>
+                <div class="exp-log-row">
+                  <div style="font-weight: 600; font-family: monospace;">Day 07</div>
+                  <div style="font-weight: 500;">Friction Removal</div>
+                  <div class="muted">Redesigned physical recording corner. Setup latency dropped from 15 mins to under 2 mins. Resistance score dropped 40%.</div>
+                </div>
+                <div class="exp-log-row">
+                  <div style="font-weight: 600; font-family: monospace;">Day 14</div>
+                  <div style="font-weight: 500;">Concept Synthesis</div>
+                  <div class="muted">Explained complex psychological bias without preparatory notes. Delivery tempo stabilized noticeably; pauses became deliberate.</div>
+                </div>
+                <div class="exp-log-row">
+                  <div style="font-weight: 600; font-family: monospace;">Day 21</div>
+                  <div style="font-weight: 500;">System Finalization</div>
+                  <div class="muted">Consolidating quantitative logs. Converting daily habit triggers into permanent operating standard (Protocol 01).</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Pipeline: Upcoming Experiments -->
+        <div class="section-header reveal-init">
+          <span class="eyebrow">RESEARCH PIPELINE</span>
+          <h2 class="section-title">UPCOMING EXPERIMENTS</h2>
+          <p class="muted">Next planned inquiries queued for execution.</p>
+        </div>
+
+        <div class="recent-work-grid reveal-init delay-1">
+          <div class="exp-pipeline-card">
+            <div>
+              <div class="card-header-meta">
+                <span>FITNESS × PSYCHOLOGY</span>
+                <span>Q4 2026</span>
+              </div>
+              <h3 class="card-title">Zone 2 Aerobic Base &amp; Cognitive Resilience</h3>
+              <p class="card-excerpt">
+                Testing whether 150 minutes of weekly Zone 2 nasal-only cardiovascular training reduces cortisol spikes during intense university examinations.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="meta-item">STATUS: DESIGN STAGE</span>
+            </div>
+          </div>
+
+          <div class="exp-pipeline-card">
+            <div>
+              <div class="card-header-meta">
+                <span>DIGITAL × DISCIPLINE</span>
+                <span>Q4 2026</span>
+              </div>
+              <h3 class="card-title">Zero-Notification Attention Architecture</h3>
+              <p class="card-excerpt">
+                Operating for 30 continuous days with zero push notifications on any mobile device. Measuring deep focus duration and output volume.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="meta-item">STATUS: PROTOCOL READY</span>
+            </div>
+          </div>
+
+          <div class="exp-pipeline-card">
+            <div>
+              <div class="card-header-meta">
+                <span>COMMUNICATION</span>
+                <span>Q1 2027</span>
+              </div>
+              <h3 class="card-title">Long-Form Socratic Dialogue Capture</h3>
+              <p class="card-excerpt">
+                Hosting 10 unscripted, 60-minute technical conversations with specialists in training, psychology, and software architecture.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="meta-item">STATUS: PLANNING</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">BHUSHAN SOVEREIGN</div>
+          <p class="footer-tagline">Building myself, one skill at a time. Digital headquarters &amp; development archive.</p>
+        </div>
+        <div class="footer-nav-groups">
+          <div>
+            <div class="footer-col-title">Navigation</div>
+            <div class="footer-links">
+              <a href="/" class="footer-link">Home</a>
+              <a href="/journal.html" class="footer-link">Journal</a>
+              <a href="/protocols.html" class="footer-link">Protocols</a>
+              <a href="/about.html" class="footer-link">About</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-col-title">Follow</div>
+            <div class="footer-links">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-link">YouTube</a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Bhushan Sovereign. All rights reserved.</div>
+        <div>Learning → Testing → Experiencing → Understanding → Documenting → Teaching</div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>

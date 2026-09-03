@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protocols — Bhushan Sovereign</title>
+  <meta name="description" content="Practical, field-tested systems and rules for communication, discipline, training, and digital capability.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/src/styles/variables.css">
+  <link rel="stylesheet" href="/src/styles/global.css">
+  <link rel="stylesheet" href="/src/styles/components.css">
+  <link rel="stylesheet" href="/src/styles/animations.css">
+  <style>
+    .protocol-card {
+      background: var(--surface-white);
+      border: var(--border-style);
+      padding: clamp(1.5rem, 3vw, 2.5rem);
+      margin-bottom: var(--space-2xl);
+    }
+    .protocol-steps {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-md);
+      margin-top: var(--space-lg);
+      border-top: var(--border-style);
+      padding-top: var(--space-lg);
+    }
+    @media (min-width: 768px) {
+      .protocol-steps {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .step-box {
+      background: var(--bg-primary);
+      border: var(--border-style);
+      padding: var(--space-md);
+      font-size: var(--text-ui);
+    }
+    .step-title {
+      font-weight: var(--font-weight-bold);
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="/" class="brand-logo" aria-label="Bhushan Sovereign Homepage">
+        BHUSHAN SOVEREIGN
+      </a>
+      <nav class="nav-desktop" role="navigation" aria-label="Main Navigation">
+        <div class="nav-links">
+          <a href="/journal.html" class="nav-link">Journal</a>
+          <a href="/experiments.html" class="nav-link">Experiments</a>
+          <a href="/protocols.html" class="nav-link active">Protocols</a>
+          <a href="/about.html" class="nav-link">About</a>
+        </div>
+        <a href="/#follow" class="nav-action">
+          Follow <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </nav>
+      <div class="mobile-controls">
+        <a href="/#follow" class="mobile-follow">Follow</a>
+        <button type="button" class="btn-menu" id="openMobileMenu" aria-label="Open menu">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="brand-logo">BHUSHAN SOVEREIGN</span>
+      <button type="button" class="reader-close-btn" id="closeMobileMenu" aria-label="Close menu">Close [esc]</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="/journal.html" class="drawer-link"><span>Journal</span><span class="index">01</span></a>
+      <a href="/experiments.html" class="drawer-link"><span>Experiments</span><span class="index">02</span></a>
+      <a href="/protocols.html" class="drawer-link"><span>Protocols</span><span class="index">03</span></a>
+      <a href="/about.html" class="drawer-link"><span>About</span><span class="index">04</span></a>
+    </nav>
+    <div class="drawer-footer">
+      <div class="drawer-socials">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content" class="site-main">
+    <section class="section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal-init" style="max-width: 720px;">
+          <span class="eyebrow">PRACTICAL SYSTEMS</span>
+          <h1 class="hero-headline" style="font-size: clamp(2.5rem, 5vw, 4.25rem); margin-bottom: var(--space-md);">
+            PROTOCOLS
+          </h1>
+          <p class="lead muted">
+            A repository of practical, repeatable operating procedures tested in the field. These are not dogma or theoretical guru rules, but honest behavioral blueprints.
+          </p>
+        </div>
+
+        <!-- Protocol 01: Communication -->
+        <article class="protocol-card reveal-init">
+          <div class="card-header-meta">
+            <span>COMMUNICATION // PROTOCOL 01</span>
+            <span>VER 1.2 · REVISED AUG 2026</span>
+          </div>
+          <h2 class="card-title" style="font-size: 1.75rem;">Daily Articulation &amp; Synthesis</h2>
+          <p class="card-excerpt" style="margin-bottom: var(--space-md);">
+            A systematic method for stripping verbal clutter, reducing conversational latency, and articulating complex concepts under stress.
+          </p>
+          <div>
+            <span class="eyebrow" style="margin-bottom: 0.25rem;">Core Axioms</span>
+            <ul style="list-style: disc; padding-left: 1.25rem; font-size: var(--text-ui); color: var(--text-primary); line-height: 1.6;">
+              <li>Lead with the definitive thesis in the first 10 seconds.</li>
+              <li>Eliminate defensive filler phrases ('sort of', 'maybe', 'I guess').</li>
+              <li>Embrace clean silence rather than using vocal drag ('um', 'uh', 'like').</li>
+            </ul>
+          </div>
+          <div class="protocol-steps">
+            <div class="step-box">
+              <div class="step-title">01 / The 3-Min Voice Memo</div>
+              <div class="muted">Record a continuous 180s monologue on a concept learned today. Review at 1.0x and log all filler words.</div>
+            </div>
+            <div class="step-box">
+              <div class="step-title">02 / 25-Word Reduction</div>
+              <div class="muted">Distill that exact concept into a single 25-word summary using active verbs only.</div>
+            </div>
+            <div class="step-box">
+              <div class="step-title">03 / Stress-Test Delivery</div>
+              <div class="muted">Recite the sentence without notes while maintaining unbroken eye contact with camera or mirror.</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Protocol 02: Discipline -->
+        <article class="protocol-card reveal-init delay-1">
+          <div class="card-header-meta">
+            <span>DISCIPLINE // PROTOCOL 02</span>
+            <span>VER 2.0 · ACTIVE STANDARD</span>
+          </div>
+          <h2 class="card-title" style="font-size: 1.75rem;">The Zero-Day &amp; Friction Elimination</h2>
+          <p class="card-excerpt" style="margin-bottom: var(--space-md);">
+            Removing decision latency so habit execution becomes mechanically inevitable, independent of mood or motivation.
+          </p>
+          <div>
+            <span class="eyebrow" style="margin-bottom: 0.25rem;">Core Axioms</span>
+            <ul style="list-style: disc; padding-left: 1.25rem; font-size: var(--text-ui); color: var(--text-primary); line-height: 1.6;">
+              <li>Never allow a zero day in the core anchor habit.</li>
+              <li>Design the room so starting friction equals zero.</li>
+              <li>Never negotiate with yourself in the moment of action; execute pre-determined schedules.</li>
+            </ul>
+          </div>
+          <div class="protocol-steps">
+            <div class="step-box">
+              <div class="step-title">01 / Evening Stage Setting</div>
+              <div class="muted">At 21:30, place all required books, training attire, and workspaces in plain sight.</div>
+            </div>
+            <div class="step-box">
+              <div class="step-title">02 / 5-Second Initiation</div>
+              <div class="muted">Count down 5-4-3-2-1 and initiate physical movement immediately before mental resistance starts.</div>
+            </div>
+            <div class="step-box">
+              <div class="step-title">03 / Baseline Floor Threshold</div>
+              <div class="muted">On days of extreme fatigue, execute the 10-minute non-negotiable minimum to preserve the psychological streak.</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Protocol 03: Training -->
+        <article class="protocol-card reveal-init delay-2">
+          <div class="card-header-meta">
+            <span>FITNESS // PROTOCOL 03</span>
+            <span>VER 1.4 · BIOMECHANICAL FOUNDATION</span>
+          </div>
+          <h2 class="card-title" style="font-size: 1.75rem;">Foundational Strength &amp; Metabolic Capacity</h2>
+          <p class="card-excerpt" style="margin-bottom: var(--space-md);">
+            Coaching-grade principles for developing high physical capability and neurological stability to fuel intellectual drive.
+          </p>
+          <div>
+            <span class="eyebrow" style="margin-bottom: 0.25rem;">Core Axioms</span>
+            <ul style="list-style: disc; padding-left: 1.25rem; font-size: var(--text-ui); color: var(--text-primary); line-height: 1.6;">
+              <li>Compound barbell and bodyweight movements precede cosmetic isolation work.</li>
+              <li>Track load, rep quality, and bar speed objectively in a physical logbook.</li>
+              <li>Zone 2 cardiovascular base is mandatory for nervous system recovery.</li>
+            </ul>
+          </div>
+          <div class="protocol-steps">
+            <div class="step-box">
+              <div class="step-title">01 / Movement Prep (10m)</div>
+              <div class="muted">Thoracic spine rotation, hip flexor activation, and dynamic joint lubrication.</div>
+            </div>
+            <div class="step-box">
+              <div class="step-title">02 / Heavy Anchor Pattern</div>
+              <div class="muted">1 primary compound movement (Squat, Hinge, Press, or Pull) performed at RPE 7.5–8.5.</div>
+            </div>
+            <div class="step-box">
+              <div class="step-title">03 / Zone 2 Conditioning</div>
+              <div class="muted">30–45 minutes of steady aerobic work maintaining pure nasal breathing twice weekly.</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Protocol 04: Digital -->
+        <article class="protocol-card reveal-init delay-3">
+          <div class="card-header-meta">
+            <span>DIGITAL // PROTOCOL 04</span>
+            <span>VER 1.1 · INFORMATION ARCHITECTURE</span>
+          </div>
+          <h2 class="card-title" style="font-size: 1.75rem;">High-Signal Curation &amp; Output Distillation</h2>
+          <p class="card-excerpt" style="margin-bottom: var(--space-md);">
+            Treating modern computing and AI as personal intellectual leverage without falling prey to algorithmic distraction traps.
+          </p>
+          <div>
+            <span class="eyebrow" style="margin-bottom: 0.25rem;">Core Axioms</span>
+            <ul style="list-style: disc; padding-left: 1.25rem; font-size: var(--text-ui); color: var(--text-primary); line-height: 1.6;">
+              <li>Strict ratio of 1 hour of synthesis/output for every 1 hour of research input.</li>
+              <li>No passive feed consumption on mobile devices before noon.</li>
+              <li>Publish field-tested learnings in public to create an unforgeable track record.</li>
+            </ul>
+          </div>
+          <div class="protocol-steps">
+            <div class="step-box">
+              <div class="step-title">01 / Morning Attention Lock</div>
+              <div class="muted">First 3 hours of the day dedicated to deep study, writing, and training with zero social media access.</div>
+            </div>
+            <div class="step-box">
+              <div class="step-title">02 / AI Sparring Session</div>
+              <div class="muted">Subject drafts and hypotheses to critical AI counter-arguments to identify cognitive flaws.</div>
+            </div>
+            <div class="step-box">
+              <div class="step-title">03 / Weekly Public Distillation</div>
+              <div class="muted">Publish one transparent field artifact or journal entry summarizing lessons from the week.</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Future Placeholder Callout -->
+        <div class="reveal-init" style="padding: var(--space-xl); border: var(--border-style); background: var(--bg-primary); font-size: var(--text-ui);">
+          <span class="eyebrow" style="margin-bottom: 0.25rem;">FUTURE-READY SYSTEM</span>
+          <p class="muted" style="margin-bottom: 0;">
+            Additional protocols in sleep hygiene, nutrition timing, and public speaking under audit are currently being field-tested and will be cataloged here once empirically validated.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">BHUSHAN SOVEREIGN</div>
+          <p class="footer-tagline">Building myself, one skill at a time. Digital headquarters &amp; development archive.</p>
+        </div>
+        <div class="footer-nav-groups">
+          <div>
+            <div class="footer-col-title">Navigation</div>
+            <div class="footer-links">
+              <a href="/" class="footer-link">Home</a>
+              <a href="/journal.html" class="footer-link">Journal</a>
+              <a href="/experiments.html" class="footer-link">Experiments</a>
+              <a href="/about.html" class="footer-link">About</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-col-title">Follow</div>
+            <div class="footer-links">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-link">YouTube</a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Bhushan Sovereign. All rights reserved.</div>
+        <div>Learning → Testing → Experiencing → Understanding → Documenting → Teaching</div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>
