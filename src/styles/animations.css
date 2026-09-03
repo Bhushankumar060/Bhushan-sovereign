@@ -1,0 +1,54 @@
+/**
+ * Bhushan Sovereign — Subtle Editorial Motion
+ * Restrained reveals, gentle opacity/translate transitions, and reduced motion safety.
+ */
+
+/* Reveal on Scroll Elements */
+.reveal-init {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1), transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger Delays for Grid Elements */
+.delay-1 { transition-delay: 0.05s; }
+.delay-2 { transition-delay: 0.1s; }
+.delay-3 { transition-delay: 0.15s; }
+.delay-4 { transition-delay: 0.2s; }
+.delay-5 { transition-delay: 0.25s; }
+
+/* Subtle Image Reveal */
+.doc-image-frame {
+  transition: filter 0.4s ease;
+}
+
+.documentary-card:hover .doc-image-frame {
+  filter: grayscale(40%) contrast(105%);
+}
+
+/* Interactive Link / Button Feedback */
+a, button {
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-init {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 960" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Subtle Film Grain Filter -->
+    <filter id="grain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" result="noise" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.1   0 0 0 0 0.1   0 0 0 0 0.1  0 0 0 0.08 0" />
+      <feComposite in2="SourceGraphic" in="gl" operator="in" />
+    </filter>
+    
+    <linearGradient id="warmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2DDD4"/>
+      <stop offset="50%" stop-color="#DAD4C8"/>
+      <stop offset="100%" stop-color="#CECAA0" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <linearGradient id="figureGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D2A26"/>
+      <stop offset="100%" stop-color="#141312"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Canvas Background with authentic tone -->
+  <rect width="800" height="960" fill="url(#warmGrad)" />
+
+  <!-- Subtle Editorial Grid & Rule Lines -->
+  <line x1="60" y1="0" x2="60" y2="960" stroke="#D0CBC2" stroke-width="1" stroke-dasharray="4 4" />
+  <line x1="740" y1="0" x2="740" y2="960" stroke="#D0CBC2" stroke-width="1" stroke-dasharray="4 4" />
+  <line x1="0" y1="120" x2="800" y2="120" stroke="#D0CBC2" stroke-width="1" />
+  <line x1="0" y1="840" x2="800" y2="840" stroke="#D0CBC2" stroke-width="1" />
+
+  <!-- Technical Framing Marks (Camera Viewfinder Marks) -->
+  <path d="M80 140 L100 140 M80 140 L80 160" stroke="#6F6B64" stroke-width="1.5" fill="none" />
+  <path d="M720 140 L700 140 M720 140 L720 160" stroke="#6F6B64" stroke-width="1.5" fill="none" />
+  <path d="M80 820 L100 820 M80 820 L80 800" stroke="#6F6B64" stroke-width="1.5" fill="none" />
+  <path d="M720 820 L700 820 M720 820 L720 800" stroke="#6F6B64" stroke-width="1.5" fill="none" />
+
+  <!-- Center Crosshair -->
+  <line x1="390" y1="480" x2="410" y2="480" stroke="#6F6B64" stroke-width="1" stroke-opacity="0.6" />
+  <line x1="400" y1="470" x2="400" y2="490" stroke="#6F6B64" stroke-width="1" stroke-opacity="0.6" />
+
+  <!-- Human Figure Silhouette: Natural posture, studying / reflecting in studio -->
+  <!-- Desk / Bench plane -->
+  <path d="M120 740 L680 740 L680 755 L120 755 Z" fill="#423E39" opacity="0.85" />
+  
+  <!-- Human Silhouette (Side-profile, posture of concentration, pen / notebook at desk) -->
+  <!-- Torso & Shoulders (Natural athletic build) -->
+  <path d="M340 500 C340 440, 370 410, 420 395 C450 385, 470 395, 490 420 C520 455, 530 540, 525 640 L440 740 L330 740 C320 660, 335 560, 340 500 Z" fill="url(#figureGrad)" />
+  
+  <!-- Head & Neck in contemplative incline -->
+  <circle cx="445" cy="330" r="54" fill="url(#figureGrad)" />
+  <path d="M430 370 C430 395, 440 410, 455 425 C435 425, 415 410, 410 390 Z" fill="url(#figureGrad)" />
+  
+  <!-- Arm reaching forward in writing / testing posture -->
+  <path d="M480 470 C510 520, 540 580, 570 650 L590 690 L530 710 L480 620 Z" fill="#24211E" />
+  <path d="M570 680 L620 725 L580 735 Z" fill="#36322D" />
+
+  <!-- Notebook / Tablet on desk -->
+  <polygon points="560,710 650,685 675,735 585,760" fill="#F4F2EE" stroke="#111111" stroke-width="2" />
+  <line x1="585" y1="715" x2="640" y2="700" stroke="#8A857C" stroke-width="1.5" />
+  <line x1="590" y1="725" x2="645" y2="710" stroke="#8A857C" stroke-width="1.5" />
+  <line x1="595" y1="735" x2="650" y2="720" stroke="#8A857C" stroke-width="1.5" />
+
+  <!-- Ambient Light Reflection on wall -->
+  <circle cx="620" cy="280" r="140" fill="#FFFFFF" opacity="0.07" />
+
+  <!-- Editorial Documentary Text Overlay -->
+  <g font-family="'Inter', monospace, sans-serif" fill="#5A564F" font-size="11" letter-spacing="1.5">
+    <text x="80" y="80" font-weight="600">PLATE NO. 01 — ARCHIVAL DOCUMENT</text>
+    <text x="80" y="98">SUBJECT: B. SOVEREIGN / AGE 23</text>
+    <text x="720" y="80" text-anchor="end" font-weight="600">PHASE: TESTING</text>
+    <text x="720" y="98" text-anchor="end">LOC: STUDIO ARCHIVE</text>
+
+    <text x="80" y="880" font-weight="600">EXP: 21-DAY DISCIPLINE &amp; VOICE</text>
+    <text x="80" y="898">LOG: RAW CAPTURE / UNFILTERED</text>
+    <text x="720" y="880" text-anchor="end">INDEX: 00492-2026</text>
+    <text x="720" y="898" text-anchor="end">STATUS: IN PROGRESS</text>
+  </g>
+</svg>
